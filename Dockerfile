@@ -8,5 +8,7 @@ RUN chmod uga+x /usr/local/bin/install-php-extensions && sync && \
 
 WORKDIR /src
 
+RUN chmod +x /opt/phing/bin/phing
+
 CMD [ "/opt/phing/bin/phing" ]
 # CMD [ "/opt/phing/bin/phing", "-verbose" ]
